@@ -46,7 +46,7 @@ const App = () => {
             );
           })}
         </ul>
-        <p>No alerts available.</p>
+        <p>You need to run Go server, port 3000.</p>
     </div>
   );
 };
