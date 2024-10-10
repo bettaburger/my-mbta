@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Noto Sans';
+    align-items: center;
+}
+
+.card {
+    color: rgb(157, 157, 156);
+    background-color: rgb(125, 103, 103);
+    border-radius: 25px;
+    width: 600px;
+    padding: 20px 30px;
+    margin: 0px auto; /* allign list items at the center */
+    margin-bottom: 10px;
+    transition: 0.4s;
+    text-align: left;
+}
+
+card:hover{
+    background-color: rgb(28, 28, 28);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    color: rgb(224, 224, 224);
+  }
