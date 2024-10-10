@@ -26,11 +26,11 @@ const Alerts = () => {
                 const {
                 id,
                 attributes: {
+                    service_effect, // -> also use for filtering, bus, rail, access, etc.
                     header,
-                    service_effect,
                     cause,
                     description,
-                    severity,
+                    //severity, -> use later for filtering, severity 1-10
                     updated_at
                   }
                 } = alert;
@@ -39,11 +39,10 @@ const Alerts = () => {
                 return (
                 <div key={id}>
                     <div class='card'>
-                    <h1 style={{color: "red"}}>{header}</h1>
-                    <p>Service Effect: {service_effect}</p>
+                    <h1 style={{color: "black", fontSize: "1.875em"}}>{service_effect}</h1>
+                    <h2 style={{color: "grey", fontSize: "1em"}}>{header}</h2>
                     <p>Cause: {cause}</p>
                     <p>Description: {description}</p>
-                    <p>Severity: {severity}</p>
                     <p>Updated At: {new Date(updated_at).toLocaleString()}</p>
                     </div>
                 </div>
