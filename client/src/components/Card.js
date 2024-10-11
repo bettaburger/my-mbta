@@ -20,7 +20,6 @@ const Alerts = () => {
 
     return (
         <div>
-
           <h1>MBTA Alerts</h1>
           <div className="card">
               {alerts.map((alert) => { //Render the data out as a list. 

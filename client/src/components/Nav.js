@@ -15,6 +15,8 @@ function Nav() {
             <a href="#">Blue Line</a>
         </div>
     </div> 
+        <a href="#Alerts">Rails</a>
+        <a href="#Alerts">Access</a>
     </div>
   )
 }
