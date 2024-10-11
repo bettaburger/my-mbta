@@ -20,8 +20,9 @@ const Alerts = () => {
 
     return (
         <div>
+
           <h1>MBTA Alerts</h1>
-            <div>
+          <div className="card">
               {alerts.map((alert) => { //Render the data out as a list. 
                 const {
                 id,
@@ -34,18 +35,16 @@ const Alerts = () => {
                     updated_at
                   }
                 } = alert;
-    
+
                 // Displaying the data alert fields.
                 return (
-                <div key={id}>
-                    <div class='card'>
-                    <h1 style={{color: "black", fontSize: "1.875em"}}>{service_effect}</h1>
-                    <h2 style={{color: "grey", fontSize: "1em"}}>{header}</h2>
+                <div key={id} className="card-item">
+                    <h1>{service_effect}</h1>
+                    <h2>{header}</h2>
                     <p>Cause: {cause}</p>
                     <p>Description: {description}</p>
                     <p>Updated At: {new Date(updated_at).toLocaleString()}</p>
                     </div>
-                </div>
                 );
               })}
             </div>

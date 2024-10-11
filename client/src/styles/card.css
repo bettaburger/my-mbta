@@ -1,29 +1,45 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color:#202225;
     text-align: center;
-    font-family: 'Noto Sans';
-    display: grid;
-    font-family: 'Roboto';
+    font-family: "Open Sans", sans-serif;
+    color: #4a4c51;
 }
 
 .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;   
+    grid-gap: 2px;
+}
+
+.card h1 {
+    color: rgb(141, 141, 141);
+    font-size: 1.2em;
+}
+
+.card h2 {
+    color: #40444b;
+    font-size: .9em;
+}
+
+
+.card-item{
     color: rgb(157, 157, 156);
-    background-color: rgb(224, 223, 223);
-    border-color: rgb(232, 231, 231);
-    border-style: solid;
+    background-color: #292b2f;
+    box-shadow: rgba(23, 23, 23, 0.2) 0px 2px 8px 0px;
     border-width: 2px; 
     border-radius: 8px; 
-    width: 400px; 
-    padding: 5px 20px; 
+    width: 450px; 
+    padding: 5px 15px; 
     margin: 0px auto; 
     margin-bottom: 10px;
     transition: 0.4s;
     text-align: left;
 }
 
-.card p{
-    background-color: rgb(233, 233, 233);
-    border-style: solid;
+.card p {
+    border-style: outset;
+    border-color: #36393e;
     border-width: 1.5px;
     border-radius: 3px;
     padding: 10px 10px;
@@ -35,7 +51,7 @@ body {
 
 
 p:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: #1e2124;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
     color: rgb(224, 224, 224);
   }
